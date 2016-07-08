@@ -1,0 +1,67 @@
+<section class="userRight">
+
+  <section class="userTop">
+
+    <div class="userTitleCont">
+
+      <h3>Send Text</h3>
+
+    </div>
+
+  </section>
+
+  <section class="userBottom">
+
+    <section class="sendingCont">
+
+        <section class="selectionArea">
+
+            <div class="selector">
+
+              <p>
+                Select Sending Number
+              </p>
+
+              <select ng-model = "srcSel" ng-click = "fillNumbers()" ng-options = "number.desc for number in numbers"></select>
+
+            </div>
+
+
+                <div class="selector">
+
+                  <p>
+                    Select Group
+                  </p>
+
+                  <select ng-model = "groupSel" ng-click = "fillGroups()" ng-options = "group.name for group in groups"></select>
+
+                </div>
+
+                <div class="selector">
+
+                  Select Student
+
+                  <select ng-model = "studentSel" ng-options = "student.name for student in groupSel.students"></select>
+
+                </div>
+
+                <div class="selector">
+
+                  Select Contact
+
+                  <select ng-model = "contactSel" ng-options = "contact.name for contact in studentSel.contact"></select>
+
+                </div>
+
+        </section>
+
+
+        <textarea class="smsInput" name="textMsg" rows="8" cols="40" ng-model="text"></textarea>
+
+        <button type="button" name="sendText" class="sendTextButton" ng-click ='sendM()'>Send Text</button>
+
+    </section>
+
+  </section>
+
+</section>

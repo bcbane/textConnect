@@ -1,0 +1,212 @@
+<modal-curtain-dir></modal-curtain-dir>
+
+<section class="adminRight">
+
+    <section class="adminTop">
+
+        <div class="adminTitleCont">
+
+            <h3>Phone Numbers</h3>
+
+        </div>
+
+        <div class="adminButtonCont">
+
+            <div class="adminAdd" ng-click="modalOn = true">
+
+                <div class="adminAddIcon">
+                    <div class="icon-users-1"></div>
+                    <div class="icon-plus"></div>
+                </div>
+
+                <p>
+                    Request Number
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="adminBottom">
+
+        <div class="listNavCont">
+
+            <div class="listNav">
+                <div class="twoDiv">
+                    <p>
+                        Phone Numbers
+                    </p>
+                </div>
+                <div class="twoDiv">
+                    <p>
+                        Description
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="listRes" ng-repeat="number in numbers">
+            <div class="twoDiv">
+                <p>
+                    {{number.number}}
+                </p>
+            </div>
+            <div class="twoDiv">
+                <p>
+                    {{number.desc}}
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+</section>
+<!-- <section class="adminRight">
+
+<section class="adminRightInfo">
+
+  <div class="adminInfoNav">
+
+    <h3>
+      Phone Numbers
+    </h3>
+
+    <div class="adminAdd"  ng-click="modalOn = true">
+
+        <div class="adminAddIcon">
+            <div class="icon-list-ol"></div>
+            <div class="icon-plus"></div>
+        </div>
+
+        <p>
+            Request Number
+        </p>
+    </div>
+
+  </div>
+
+<div class="listNav">
+
+  <p>
+    Phone Numbers
+  </p>
+
+  <p>
+    Description
+  </p>
+
+  <p>
+    Groups Assigned
+  </p>
+
+</div>
+
+<div class="listResults" ng-click='modalOn = true'>
+
+<div class="results">
+  <p>
+    555-555-5555
+  </p>
+</div>
+
+<div class="results">
+  <p>
+    Main Number
+  </p>
+</div>
+<div class="results">
+  <p>
+    DM 11, DM 10, DM 9, DM 8
+  </p>
+</div>
+</div>
+
+<div class="listResults" ng-click='modalOn = true'>
+
+<div class="results">
+  <p>
+    444-444-4444
+  </p>
+</div>
+<div class="results">
+  <p>
+    School Administration
+  </p>
+</div>
+<div class="results">
+  <p>
+    All Students
+  </p>
+</div>
+</div>
+
+</section> -->
+
+<!-- <div class="listNav">
+
+  <p>
+    Parent 1 First Name
+  </p>
+
+  <p>
+    Parent 1 Last Name
+  </p>
+
+  <p>
+    Parent 2 First Name
+  </p>
+
+  <p>
+    Parent 2 Last Name
+  </p>
+
+
+</div> -->
+
+
+<!-- <modal-curtain-dir></modal-curtain-dir>
+
+<section class="adminRight">
+
+  <section class="adminList">
+<section class="adminNavTitle">
+    <h3>
+      Phone Numbers
+    </h3>
+
+    <div class="adminAdd"  ng-click="modalOn = true">
+
+        <div class="adminAddIcon">
+            <div class="icon-list-ol"></div>
+            <div class="icon-plus"></div>
+        </div>
+
+        <p>
+            Add Phone Number
+        </p>
+    </div>
+</section>
+    <div class="listNav">
+
+      <p>
+        Phone Numbers
+      </p>
+
+      <p>
+        Name
+      </p>
+
+      <p>
+        Groups Assigned
+      </p>
+
+    </div>
+
+  </section>
+
+  </section>
+
+</section> -->

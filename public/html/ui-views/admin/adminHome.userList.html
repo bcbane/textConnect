@@ -1,0 +1,158 @@
+<modal-curtain-dir></modal-curtain-dir>
+
+<section class="adminRight">
+
+  <section class="adminTop">
+
+    <div class="adminTitleCont">
+
+      <h3>Users</h3>
+
+    </div>
+
+    <div class="adminButtonCont">
+
+      <div class="adminAdd"  ng-click="modalOn = true; getGroups()">
+
+          <div class="adminAddIcon">
+              <div class="icon-users-1"></div>
+              <div class="icon-plus"></div>
+          </div>
+
+          <p>
+              Add User
+          </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="adminBottom">
+
+    <div class="listNavCont">
+
+      <div class="listNav">
+
+        <div class="fiveDiv">
+          <p>
+              First Name
+          </p>
+        </div>
+        <div class="fiveDiv">
+          <p>
+              Last Name
+          </p>
+        </div>
+        <div class="fiveDiv">
+          <p>
+              Phone Number
+          </p>
+        </div>
+        <div class="fiveDiv">
+          <p>
+              Username
+          </p>
+        </div>
+        <div class="fiveDiv">
+          <p>
+              Groups
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="listNavCont">
+
+      <div class="listRes" ng-repeat="user in users">
+        <div class="fiveDiv">
+          <p>
+              {{user.fname}}
+          </p>
+        </div>
+        <div class="fiveDiv">
+          <p>
+              {{user.lname}}
+          </p>
+        </div>
+        <div class="fiveDiv">
+          <p>
+              {{user.phone}}
+          </p>
+        </div>
+        <div class="fiveDiv">
+          <p>
+              {{user.username}}
+          </p>
+        </div>
+        <div class="fiveDiv" >
+          <p ng-repeat = "group in user.groups">
+              {{group.name}}
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+</section>
+<!--
+<section class="adminRight">
+
+<section class="adminList">
+
+<section class="adminNavTitle">
+
+  <h3>
+    Users
+  </h3>
+
+        <div class="adminAdd"  ng-click="modalOn = true">
+
+            <div class="adminAddIcon">
+                <div class="icon-users-1"></div>
+                <div class="icon-plus"></div>
+            </div>
+
+            <p>
+                Add User
+            </p>
+        </div>
+  </section>
+
+        <div class="listNav">
+
+            <p>
+                First Name
+            </p>
+
+            <p>
+                Last Name
+            </p>
+
+            <p>
+                Phone Number
+            </p>
+
+            <p>
+                Username
+            </p>
+
+            <p>
+                Password
+            </p>
+
+            <p>
+                Groups
+            </p>
+
+        </div>
+
+    </section>
+
+</section> -->

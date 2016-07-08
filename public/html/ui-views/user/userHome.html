@@ -1,0 +1,87 @@
+<modal-curtain-dir></modal-curtain-dir>
+
+<section class="userBar">
+
+    <section class="logoutArea">
+
+      <div class="userType">
+        <p>
+          User Control Panel
+        </p>
+      </div>
+
+      <div id="logoutButton" ng-click = "logout()">
+        <div class="icon-logout"></div>
+        <p>
+            Logout
+        </p>
+      </div>
+    </section>
+
+    <div class="userArea" ui-sref="user.userInfo">
+        <div id="user">
+            <p>
+                Logged in as:
+            </p>
+            <p>
+                {{userUser.fname}}{{userUser.lname}}
+            </p>
+        </div>
+
+        <div class="circle">
+            <div class="icon-user"></div>
+        </div>
+    </div>
+
+</section>
+
+<section class="adminOptions">
+
+    <section class="leftNav">
+        <ul>
+            <li class="hvr-sweep-to-right" ng-click = "sendMessage()">
+                <div class="adNavItem">
+                    <div class="circle">
+                        <div class="icon-mobile"></div>
+                    </div>
+                    <p>
+                        Send Message
+                    </p>
+                </div>
+            </li>
+            <li class="hvr-sweep-to-right" ng-click = "fillGroups()" ui-sref="user.history">
+                <div class="adNavItem">
+                    <div class="circle">
+                        <div class="icon-history"></div>
+                    </div>
+                    <p>
+                        History
+                    </p>
+                </div>
+            </li>
+            <li class="hvr-sweep-to-right" ng-click = "fillGroups()" ui-sref="user.groupList">
+                <div class="adNavItem">
+                    <div class="circle">
+                        <div class="icon-users-2"></div>
+                    </div>
+                    <p>
+                        My Groups
+                    </p>
+                </div>
+            </li>
+            <li class="hvr-sweep-to-right" ng-click = "fillGroups()" ui-sref="user.studentList">
+                <div class="adNavItem">
+                    <div class="circle">
+                        <div class="icon-id-card"></div>
+                    </div>
+                    <p>
+                        My Students
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+  <ui-view></ui-view>
+
+</section>

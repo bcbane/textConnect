@@ -1,0 +1,181 @@
+<modal-curtain-dir></modal-curtain-dir>
+
+<section class="userRight">
+
+  <section class="userTop">
+
+    <div class="userTitleCont">
+
+      <h3>My Students</h3>
+
+    </div>
+
+  </section>
+
+  <section class="userBottom">
+
+    <div class="listNavCont">
+
+      <div class="listNav">
+
+        <p>
+          Student Name
+        </p>
+
+        <p>
+          Group Assigned
+        </p>
+
+      </div>
+
+    </div>
+
+    <div ng-repeat = "group in groups">
+
+      <div class="listRes" ng-repeat = "student in group.students">
+        <p>
+          {{student.name}}
+        </p>
+
+        <p>
+          {{group.name}}
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+</section>
+
+
+<!-- <section class="adminRight">
+
+<section class="adminRightInfo">
+
+<div class="adminInfoNav">
+
+  <h3>
+    My Students
+  </h3>
+</div>
+
+<div class="listNav">
+
+  <p>
+    Student First Name
+  </p>
+
+  <p>
+    Student Last Name
+  </p>
+
+  <p>
+    Group
+  </p>
+
+</div>
+
+<div class="listResults" ng-click='modalOn = true'>
+
+  <p>
+    Scott
+  </p>
+
+  <p>
+    Harvey
+  </p>
+
+  <p>
+    DM 11
+  </p>
+
+</div>
+
+<div class="listResults" ng-click='modalOn = true'>
+
+  <p>
+    Chris
+  </p>
+
+  <p>
+    Myers
+  </p>
+
+  <p>
+    DM 11
+  </p>
+
+</div>
+
+<div class="listResults" ng-click='modalOn = true'>
+
+  <p>
+    Bob
+  </p>
+
+  <p>
+    Cook
+  </p>
+
+  <p>
+    DM 11
+  </p>
+
+</div>
+
+<div class="listResults" ng-click='modalOn = true'>
+
+  <p>
+    Scott
+  </p>
+
+  <p>
+    Gourley
+  </p>
+
+  <p>
+    DM 11
+  </p>
+
+</div>
+
+<div class="listResults" ng-click='modalOn = true'>
+
+  <p>
+    Bob
+  </p>
+
+  <p>
+    Cook
+  </p>
+
+  <p>
+    DM 11
+  </p>
+
+</div>
+
+
+</section> -->
+
+<!-- <div class="listNav">
+
+  <p>
+    Parent 1 First Name
+  </p>
+
+  <p>
+    Parent 1 Last Name
+  </p>
+
+  <p>
+    Parent 2 First Name
+  </p>
+
+  <p>
+    Parent 2 Last Name
+  </p>
+
+
+</div> -->

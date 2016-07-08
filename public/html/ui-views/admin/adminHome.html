@@ -1,0 +1,88 @@
+
+
+<section class="userBar">
+
+  <section class="logoutArea">
+
+    <div class="userType">
+      <p>
+        Admin Control Panel
+      </p>
+    </div>
+
+    <div id="logoutButton" ng-click = "logout()" >
+      <div class="icon-logout"></div>
+      <p>
+          Logout
+      </p>
+    </div>
+  </section>
+
+    <div class="userArea" ui-sref="admin.adminInfo">
+        <div id="user">
+            <p>
+                Logged in as:
+            </p>
+            <p>
+                {{adminUser.fname}} {{adminUser.lname}}
+            </p>
+
+        </div>
+
+        <div class="circle">
+            <div class="icon-user"></div>
+        </div>
+    </div>
+
+</section>
+
+<section class="adminOptions">
+
+    <section class="leftNav">
+        <ul>
+            <li class="hvr-sweep-to-right">
+                <div class="adNavItem" ng-click = "getUsers()">
+                    <div class="circle">
+                        <div class="icon-users-1"></div>
+                    </div>
+                    <p>
+                        Manage Users
+                    </p>
+                </div>
+            </li>
+            <li class="hvr-sweep-to-right">
+                <div class="adNavItem" ng-click = "getGroups()">
+                    <div class="circle">
+                        <div class="icon-users-2"></div>
+                    </div>
+                    <p>
+                        Manage Groups
+                    </p>
+                </div>
+            </li>
+            <li class="hvr-sweep-to-right">
+                <div class="adNavItem" ng-click ="getStudents()">
+                    <div class="circle">
+                        <div class="icon-id-card"></div>
+                    </div>
+                    <p>
+                        Manage Students
+                    </p>
+                </div>
+            </li>
+            <li class="hvr-sweep-to-right">
+                <div class="adNavItem" ng-click="getNumbers()">
+                    <div class="circle">
+                        <div class="icon-list-ol"></div>
+                    </div>
+                    <p>
+                        Manage Numbers
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+  <ui-view></ui-view>
+
+</section>

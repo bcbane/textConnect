@@ -1,0 +1,15 @@
+<section class="adminUserModal">
+<p>
+  Create New User
+</p>
+<input type="text" name="First Name" placeholder="First Name" ng-model = "newUser.fname">
+<input type="text" name="Last Name" placeholder="Last Name" ng-model = "newUser.lname">
+<input type="text" name="Phone Number" placeholder="Phone Number" ng-model = "newUser.phone">
+<input type="text" name="Username" placeholder="Username" ng-model = "newUser.username">
+<input type="password" name="Password" placeholder="Password" ng-model = "newUser.password">
+
+<select multiple ng-model = "groups.group" ng-options ="group.name for group in groups"></select>
+
+<button type="button" name="Create" ng-click = "addUser(newUser, groups.group)" >Create</button>
+
+</section>

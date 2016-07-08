@@ -1,0 +1,83 @@
+<section class="adminRight">
+
+    <section class="adminTop">
+
+        <div class="adminTitleCont">
+
+            <h3>User Info</h3>
+
+        </div>
+
+    </section>
+
+    <section class="adminBottom">
+
+      <section class="adminInfoGrid">
+
+        <section class="adminInfoC1">
+
+            <div class="adminInfoList">
+                <p>
+                    Name
+                </p>
+            </div>
+
+            <div class="adminInfoList">
+                <p>
+                    Phone Number
+                </p>
+            </div>
+            <div class="adminInfoList">
+                <p>
+                    Username
+                </p>
+            </div>
+
+            <div class="adminInfoList">
+                <p>
+                    Groups Assigned
+                </p>
+            </div>
+
+        </section>
+
+        <section class="adminInfoC2">
+
+            <div class="adminInfoList">
+                <p>
+                    {{userUser.fname}} {{userUser.lname}}
+                </p>
+            </div>
+
+            <div class="adminInfoList">
+                <p>
+                    {{userUser.phone}}
+                </p>
+            </div>
+            <div class="adminInfoList">
+                <p>
+                    {{userUser.username}}
+                </p>
+            </div>
+
+
+            <div class="adminInfoListSpecial">
+
+                <div ng-repeat = "group in userUser.groups">
+
+                    <div>
+
+                      <span> {{group.name}} &nbsp </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+      </section>
+
+    </section>

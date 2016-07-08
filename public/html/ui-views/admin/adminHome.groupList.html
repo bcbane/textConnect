@@ -1,0 +1,108 @@
+<modal-curtain-dir></modal-curtain-dir>
+
+<section class="adminRight">
+
+  <section class="adminTop">
+
+    <div class="adminTitleCont">
+
+      <h3>Groups</h3>
+
+    </div>
+
+    <div class="adminButtonCont">
+
+      <div class="adminAdd" ng-click="modalOn = true">
+
+          <div class="adminAddIcon">
+              <div class="icon-users-2"></div>
+              <div class="icon-plus"></div>
+          </div>
+
+          <p>
+              Add Group
+          </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="adminBottom">
+
+    <div class="listNavCont">
+
+      <div class="listNav">
+
+        <div class="twoDiv">
+          <p>
+              Group Name
+          </p>
+        </div>
+        <div class="twoDiv">
+          <p>
+              Group Description
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+      <div class="listRes" ng-repeat = "group in groups">
+        <div class="twoDiv">
+          <p>
+            {{group.name}}
+          </p>
+        </div>
+        <div class="twoDiv">
+          <p>
+            {{group.desc}}
+          </p>
+        </div>
+
+
+      </div>
+
+  </section>
+
+</section>
+
+<!-- <section class="adminRight">
+
+  <section class="adminList">
+
+<section class="adminNavTitle">
+
+    <h3>
+      Groups
+    </h3>
+
+    <div class="adminAdd" ng-click="modalOn = true">
+
+        <div class="adminAddIcon">
+            <div class="icon-users-2"></div>
+            <div class="icon-plus"></div>
+        </div>
+
+        <p>
+            Add Group
+        </p>
+    </div>
+</section>
+    <div class="listNav">
+
+      <p>
+        Group Name
+      </p>
+
+      <p>
+        Group Description
+      </p>
+
+    </div>
+
+  </section>
+
+
+</section> -->

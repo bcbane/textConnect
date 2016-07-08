@@ -1,0 +1,15 @@
+<section class="adminStudentModal">
+<p>
+  Create New Student
+</p>
+<input type="text" name="Student Name" placeholder="Student Name" ng-model ="student.name">
+<input type="text" name="Contact Name" placeholder="Contact Name" ng-model ="contact.name">
+<input type="text" name="Phone" placeholder="Phone" ng-model ="contact.phone">
+<input type="text" name="Relationship" placeholder="Relationship to Student" ng-model ="contact.relationship">
+
+
+<select multiple ng-model = "groups.group" ng-options ="group.name for group in groups"></select>
+
+<button type="button" name="Create" ng-click = "createStudent(student, contact)">Create</button>
+
+</section>

@@ -1,0 +1,967 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400);
+@import url(https://fonts.googleapis.com/css?family=Abel);
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    background: #0c9eff;
+    position: fixed;
+}
+.mainLogo {
+    color: white;
+    font-family: Oswald;
+    font-size: 40px;
+    padding: 20px;
+    text-shadow: 1px 1px 1px #555;
+}
+h1 span {
+    color: #0be88c;
+}
+#greenText {
+    color: #0be88c;
+}
+
+#accentGreen{
+  color: #09c391;
+}
+
+nav ul li {
+    color: white;
+    font-family: Oswald;
+    font-size: 25px;
+    margin: 10px;
+}
+nav ul li:hover {
+    color: #0bcae8;
+}
+.mainMenu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.icon-bars {
+    display: none;
+}
+.menuSpacing {
+    height: 10vh;
+}
+
+.imgCont {
+    width: 100%;
+    height: 50vh;
+    background-image: url("/pics/textingParent-min.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0% 25%;
+}
+.explanation {
+    padding: 5%;
+}
+.explanation h2 {
+    text-align: center;
+    padding: 5px;
+    color: #555;
+    font-size: 20px;
+    font-family: Oswald;
+}
+.explanation p {
+    text-align: center;
+    color: #0be88c;
+    font-size: 70px;
+    font-family: Lato;
+}
+.buttonArea{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.signUpButton {
+    height: 50px;
+    width: 20%;
+    background: #0be88c;
+    color: white;
+    font-family: Lato;
+    font-size: 20px;
+
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+.intro {
+    background: #0bcae8;
+}
+.intro h3 {
+    font-family: Open Sans;
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+    padding: 30px;
+    text-align: center;
+}
+.introList {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.introListItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 20px;
+}
+.icon-play {
+    padding: 10px;
+    color: #0be88c;
+}
+.introListItem p {
+    margin-top: 10px;
+    color: white;
+    font-family: Lato;
+}
+
+#getStarted {
+    font-family: Abel;
+    font-size: 50px;
+    text-align: center;
+    color: #0c9eff;
+    margin: 20px;
+}
+.signupArea {
+    height: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.facebookSignup {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.facebookSignup p {
+    font-family: Abel;
+    font-size: 25px;
+    color: #333;
+    text-align: center;
+    margin: 40px;
+    min-width: 320px;
+}
+.facebookButton {
+    background: #4683e1;
+    width: 80%;
+    min-width: 320px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: Open Sans;
+    color: #fff;
+    border-radius: 15px;
+}
+.icon-facebook-official {
+    color: #white;
+    font-size: 30px;
+}
+.midLine {
+    width: 2px;
+    background: #888;
+}
+.regSignup {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.regSignup p {
+    font-family: Abel;
+    font-size: 25px;
+    color: #333;
+    text-align: center;
+    margin: 40px;
+    min-width: 320px;
+}
+.regSignup input {
+    width: 80%;
+    min-width: 320px;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-family: Abel;
+}
+.regSignup button {
+    background: #0bcae8;
+    width: 90%;
+    min-width: 320px;
+    margin: 10px;
+    padding: 15px;
+    font-size: 20px;
+    font-family: Open Sans;
+    color: #fff;
+    border-radius: 15px;
+}
+
+.loginArea{
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.loginLower{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-bottom: 25vh;
+}
+
+.loginCont{
+  width: 40%;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#welcome {
+    font-family: Abel;
+    font-size: 50px;
+    text-align: center;
+    color: #0c9eff;
+    margin: 20px;
+
+}
+
+.loginArea h3 {
+    font-family: Abel;
+    font-size: 25px;
+    color: #333;
+    width: 160px;
+    text-align: center;
+    margin: 40px;
+}
+
+.loginArea input {
+    width: 100%;
+    min-width: 320px;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-family: Abel;
+
+}
+
+.loginArea button {
+    background: #0bcae8;
+    width: 340px;
+    margin: 40px;
+    padding: 15px;
+    font-size: 20px;
+    font-family: Open Sans;
+    color: #fff;
+    border-radius: 15px;
+}
+
+.userBar{
+  width: 100%;
+  background: #70c6ff;
+  border-bottom: 3px solid #0c9eff;
+
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.logoutArea{
+  width: 170px;
+  height: 50px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#logoutButton{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+}
+
+.icon-logout{
+  color: #fff;
+  font-size: 20px;
+}
+
+.logoutArea p{
+  font-family: Open Sans;
+  color: #fff;
+}
+
+#logoutButton p{
+  padding: 2px;
+}
+
+.userArea{
+  width: 180px;
+  height: 60px;
+
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#user p{
+  font-family: Open Sans;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.circle{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  padding-top: 5px;
+
+  background: #fff;
+  color: #0bcae8;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-user{
+  font-size: 30px;
+}
+
+
+.icon-users-1{
+  font-size: 30px;
+}
+
+.icon-id-card{
+  font-size: 30px;
+}
+
+.icon-users-2{
+  font-size: 26px;
+}
+
+.icon-list-ol{
+  font-size: 22px;
+}
+
+.icon-mobile{
+  font-size: 35px;
+}
+
+.icon-history{
+  font-size: 25px;
+}
+
+.icon-users{
+  font-size: 30px;
+}
+
+.icon-user-add{
+  font-size: 30px;
+}
+
+
+.adminOptions{
+  height: 80vh;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.leftNav{
+
+  /*background: #a3d4f5;*/
+  background: #0be88c;
+  width:23vw;
+  height: 100%;
+}
+
+.adNavItem{
+  /*padding: 30px;*/
+
+  width: 100%;
+  height: 18vh;
+
+  margin-left: 15px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.adNavItem p{
+  color: white;
+  padding: 10px;
+  font-family: Abel;
+}
+
+/* Sweep To Right */
+.hvr-sweep-to-right {
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #2098d1;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+  color: white;
+}
+.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+.modalCurtain{
+
+  width: 100vw;
+  height: 100vh;
+
+  position: fixed;
+  top:0;
+  right: 0;
+  z-index: 500;
+
+
+  background: #333;
+  opacity: 0.8;
+}
+
+.modalBox{
+
+  background: #fff;
+  opacity: 0.99;
+  width: 70%;
+  height: 70vh;
+
+  border-radius: 3px;
+
+  position: fixed;
+  top: 15%;
+  left: 15%;
+  z-index: 1000;
+
+  padding: 40px;
+}
+
+.modalNav{
+  position: relative;
+}
+
+.closeMod{
+
+  color: #2098d1;
+
+  font-size: 30px;
+  position: absolute;
+
+  top: -30px;
+  left: -30px;
+}
+
+
+.adminRight{
+  width: 77vw;
+  height: 100%;
+
+  overflow: scroll;
+}
+
+.userRight{
+  width: 77vw;
+  height: 100%;
+
+  overflow: scroll;
+
+}
+
+.userRight h3{
+  font-size: 50px;
+  font-family: Lato;
+  color: #2098d1;
+}
+
+.adminTop{
+  height: 100px;
+  width: 100%;
+
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 50px;
+}
+
+.userTop{
+  height: 100px;
+  width: 100%;
+
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 50px;
+}
+
+.adminBottom{
+  padding-left: 50px;
+  padding-right: 50px
+}
+
+.userBottom{
+  padding-left: 50px;
+  padding-right: 50px
+}
+
+.adminRight h3{
+  font-size: 50px;
+  font-family: Lato;
+  color: #2098d1;
+
+}
+
+.sendingCont{
+  width: 450px;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.selectionArea{
+
+  width: 100%;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.selector{
+  padding-right: 20px;
+  padding-bottom: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.smsInput{
+  border: solid #2098d1 4px;
+  border-radius: 10px;
+  padding: 10px;
+
+  font-size: 20px;
+
+  resize: none;
+
+  width: 100%;
+  height: 30vh;
+
+  overflow: scroll;
+
+}
+
+.sendTextButton{
+  background: #0be88c;
+  width: 200px;
+  height: 50px;
+  font-family: Abel;
+  font-size: 20px;
+  color: white;
+  border-radius: 8px;
+
+  margin: 20px;
+}
+
+.adminInfoGrid{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.adminInfoGrid p{
+  color: #fff;
+  font-family: Abel;
+  font-size: 18px;
+}
+
+.adminInfoC1{
+  width: 45%;
+}
+
+.adminInfoC2{
+  width: 45%;
+}
+
+.adminInfoList{
+  margin-bottom: 1vh;
+
+}
+
+.adminInfoC1 p{
+  border-radius: 8px;
+  width: 100%;
+  padding: 2vh;
+  background: #2098d1;
+}
+
+.adminInfoC2 p{
+  border-radius: 8px;
+  width: 100%;
+  padding: 2vh;
+  background: #0be88c;
+}
+
+.adminInfoListSpecial{
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+  background: #0be88c;
+  color: #fff;
+  font-family: Abel;
+  font-size: 18px;
+  padding: 2vh;
+  line-height: 1.2;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.adminAdd{
+  height: 60px;
+  width: 20vw;
+  min-width: 172px;
+  border-radius: 8px;
+
+  background: #0be88c;
+  color: white;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.adminAddIcon{
+  position: relative;
+  height: 70%;
+  width: 10%;
+}
+
+.adminAddIcon .icon-users-1{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.adminAddIcon .icon-users-2{
+  position: absolute;
+  top: 10px;
+  left: 18px;
+}
+
+.adminAddIcon .icon-id-card{
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+
+.adminAddIcon .icon-list-ol{
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.adminAddIcon .icon-plus{
+  position: absolute;
+  top: 3px;
+  left: 3px;
+}
+
+.adminAdd p{
+
+  font-family: Lato;
+  font-size: 15px;
+}
+
+
+.listNav{
+
+  height: 72px;
+  padding: 15px;
+  background: #2098d1;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.listNav p{
+  color: white;
+  font-size: 20px;
+  font-family: Abel;
+  text-align: center;
+
+}
+
+.fiveDiv{
+  width: calc(100% / 5)
+}
+.fourDiv{
+  width: calc(100% / 4)
+}
+.twoDiv{
+  width: calc(100% / 2)
+}
+
+.listRes{
+
+  height: 72px;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: #0be88c;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.listRes p{
+  color: white;
+  font-size: 20px;
+  font-family: Abel;
+  text-align: center;
+
+}
+
+/*.listResults{
+  width: 70vw;
+  padding: 5vh;
+  margin-top: 2vh;
+  border:solid #0be88c 2px;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: space-between;
+}*/
+
+/*.results{
+  width: 33.33%;
+
+  text-align: center;
+}*/
+
+/*.listResults p{
+  color: #2098d1;
+  font-size: 20px;
+  font-family: Abel;
+}*/
+
+
+footer{
+  border-top: 5px #19ffe0 solid;
+}
+
+footer ul{
+    background: #0c9eff;
+    height: 10vh;
+
+    color: white;
+    font-family: Oswald;
+    font-size: 15px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul li{
+  padding: 20px;
+}
+@media (max-width: 840px) {
+
+  .adminTop{
+    flex-direction: column;
+    padding: 10px;
+    height: 144px;
+  }
+
+  .signupArea {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .leftNav{
+    width: 85px;
+  }
+
+  .adminOptions{
+    justify-content: flex-start;
+  }
+
+  .adminBottom{
+    padding-right: 5px;
+  }
+
+  .userBottom{
+    padding-left: 25px;
+  }
+
+  .sendingCont{
+    width: 275px;
+  }
+
+  .adNavItem p {
+    display: none;
+  }
+
+  .loginLower{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .listNav p{
+    font-size: 14px;
+  }
+
+  .listNav{
+    height: 60px;
+  }
+
+  .listRes p{
+    font-size: 14px;
+  }
+
+  .listRes{
+    height: 60px;
+  }
+
+  .adminInfoGrid p{
+
+    font-size: 14px;
+  }
+
+  .adminInfoListSpecial {
+    font-size: 14px;
+  }
+
+  .adminRight h3{
+    font-size: 38px;
+  }
+
+}
+
+@media (max-width: 700px) {
+
+    nav h1 {
+        font-size: 30px;
+    }
+    .mainMenu {
+        display: none;
+    }
+    .icon-bars {
+        color: white;
+        font-size: 50px;
+        display: block;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    .introList {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .signUpButton {
+        width: 80%;
+    }
+
+    .adminBottom{
+
+      padding-left: 5px;
+    }
+
+
+}
+
+@media (max-width: 520px) {
+    .imgCont {
+        background-size: 200%;
+    }
+
+    .listNav p{
+      font-size: 10px;
+    }
+
+    .listNav{
+      height: 50px;
+    }
+
+    .listRes p{
+      font-size: 10px;
+    }
+
+    .listRes{
+      height: 50px;
+    }
+
+    .adminInfoListSpecial {
+      font-size: 10px;
+    }
+}

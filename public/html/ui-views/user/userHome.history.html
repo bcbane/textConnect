@@ -1,0 +1,186 @@
+<section class="userRight">
+
+    <section class="userTop">
+
+        <div class="userTitleCont">
+
+            <h3>History</h3>
+
+        </div>
+
+    </section>
+
+    <section class="userBottom">
+
+        <section class="selectionArea">
+
+            <div class="selector">
+
+                <p>
+                    Select Group
+                </p>
+
+                <select ng-model="groupSel" ng-click="fillGroups()" ng-options="group.name for group in groups"></select>
+
+            </div>
+
+            <div class="selector">
+
+                Select Student
+
+                <select ng-model="studentSel" ng-options="student.name for student in groupSel.students"></select>
+
+            </div>
+
+        </section>
+
+        <div class="listNavCont">
+
+            <div class="listNav">
+
+                <p>
+                    Message Content
+                </p>
+
+                <p>
+                    Message Delivered to
+                </p>
+
+
+            </div>
+
+        </div>
+
+        <div class="listRes" ng-repeat = "message in studentSel.messages">
+            <div>
+                <p>
+                    {{message.text}}
+                </p>
+            </div>
+
+            <div>
+                <p>
+                    {{message.dst}}
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+</section>
+
+<!-- <section class="adminRight">
+
+    <section class="adminRightInfo">
+
+        <div class="adminInfoNav">
+
+            <h3>
+    History
+  </h3>
+        </div>
+
+<section class=userContentArea>
+        <section class="selectionArea">
+
+            <div class="selector">
+
+                <select>
+                    <option selected disabled>Select Group</option>
+                    <option value="Example Group 1">Example Group 1</option>
+                    <option value="Example Group 2">Example Group 2</option>
+                    <option value="Example Group 3">Example Group 3</option>
+                    <option value="Example Group 4">Example Group 4</option>
+                </select>
+            </div>
+
+            <div class="selector">
+                <select>
+                    <option selected disabled>Select Student</option>
+                    <option value="Example Student 1">Example Student 1</option>
+                    <option value="Example Student 2">Example Student 2</option>
+                    <option value="Example Student 3">Example Student 3</option>
+                    <option value="Example Student 4">Example Student 4</option>
+                </select>
+            </div>
+        </section>
+
+        <div class="listNav">
+
+            <p>
+                Message Content
+            </p>
+
+            <p>
+                Message Delivered to
+            </p>
+
+            <p>
+                Message Date
+            </p>
+
+
+        </div>
+
+        <div class="listResults" ng-click='modalOn = true'>
+
+          <div class="results">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div class="results">
+          <p>
+            Chris's Dad
+          </p>
+        </div>
+        <div class="results">
+          <p>
+            06/15/16
+          </p>
+        </div>
+
+        </div>
+
+        <div class="listResults" ng-click='modalOn = true'>
+
+          <div class="results">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div class="results">
+          <p>
+            young Scott's Dad
+          </p>
+        </div>
+        <div class="results">
+          <p>
+            06/15/16
+          </p>
+        </div>
+
+        </div>
+
+        <div class="listResults" ng-click='modalOn = true'>
+
+          <div class="results">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div class="results">
+          <p>
+            beard Scott's Mom
+          </p>
+        </div>
+        <div class="results">
+          <p>
+            06/15/16
+          </p>
+        </div>
+
+        </div>
+
+</section> -->

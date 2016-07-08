@@ -1,0 +1,37 @@
+<h2 id="getStarted">
+Let's Get Started
+</h2>
+
+<section class="signupArea">
+    <section class="facebookSignup">
+        <p>
+            Do you want to create an account using Facebook?
+        </p>
+
+        <button type="button" name="facebookButton" class="facebookButton">
+            <div class="icon-facebook-official"></div>Sign up using Facebook</button>
+    </section>
+
+    <div class="midLine">
+
+    </div>
+
+    <section class="regSignup">
+        <p>
+            Register New Account
+        </p>
+
+        {{creation}}
+
+        <input type="text" name="First Name" placeholder="First Name" ng-model="admin.fname">
+        <input type="text" name="Last Name" placeholder="Last Name" ng-model="admin.lname">
+        <input type="text" name="Email" placeholder="Work Email" ng-model="admin.email">
+        <input type="text" name="Phone Number" placeholder="Phone Number" ng-model="admin.phone">
+        <input type="text" name="Job Title" placeholder="Job Title" ng-model="admin.job">
+        <!-- PASSWORD CURRENTLY BEING SAVED AS PLAIN TEXT, THIS IS OBVIOUSLY INCORRECT AND IS NOT FINAL AND IS FOR PROOF OF CONCEPT ONLY -->
+        <input type="password" name="Password" placeholder="Password" ng-model="admin.password">
+
+        <button type="button" name="Signup" ng-click="signup()">Signup</button>
+
+    </section>
+  </section>

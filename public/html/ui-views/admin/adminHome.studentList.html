@@ -1,0 +1,318 @@
+<modal-curtain-dir></modal-curtain-dir>
+
+<section class="adminRight">
+
+  <section class="adminTop">
+
+    <div class="adminTitleCont">
+
+      <h3>Students</h3>
+
+    </div>
+
+    <div class="adminButtonCont">
+
+      <div class="adminAdd" ng-click="modalOn = true; getGroups(); getStudents()">
+
+          <div class="adminAddIcon">
+              <div class="icon-id-card"></div>
+              <div class="icon-plus"></div>
+          </div>
+
+          <p>
+              Add Student
+          </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="adminBottom">
+
+    <div class="listNavCont">
+
+      <div class="listNav">
+        <div class="fourDiv">
+          <p>
+              Student Name
+          </p>
+        </div>
+        <div class="fourDiv">
+          <p>
+              Contact Name
+          </p>
+        </div>
+        <div class="fourDiv">
+          <p>
+              Contact Phone Number
+          </p>
+        </div>
+        <div class="fourDiv">
+          <p>
+              Contact relationship
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="listRes" ng-repeat = "student in students" >
+      <div class="fourDiv">
+        <p>
+          {{student.name}}
+        </p>
+        </div>
+        <div class="fourDiv">
+        <p>
+          {{student.contact[0].name}}
+        </p>
+        </div>
+        <div class="fourDiv">
+        <p>
+          {{student.contact[0].phone}}
+        </p>
+        </div>
+        <div class="fourDiv">
+        <p>
+          {{student.contact[0].relationship}}
+        </p>
+        </div>
+    </div>
+
+  </section>
+
+</section>
+
+<!-- <section ng-if='infoModal'>
+
+
+
+    <section class="modalBox">
+
+        <section class="modalNav">
+
+            <div class="icon-cancel-circled closeMod" ng-click="infoModalOff()"></div>
+
+        </section>
+
+        {{studentSel.name}}
+        {{studentSel.contact[0].name}}
+        {{studentSel.contact[0].phone}}
+        {{studentSel.contact[0].relationship}}
+
+
+
+    </section>
+
+    <section class="modalCurtain" ng-click="infoModalOff()">
+
+
+    </section>
+
+</section> -->
+
+
+
+<!-- <section class="adminRight">
+
+<section class="adminRightInfo">
+
+<div class="adminInfoNav">
+
+  <h3>
+    Students
+  </h3>
+
+  <div class="adminAdd"  ng-click="modalOn = true">
+
+      <div class="adminAddIcon">
+          <div class="icon-id-card"></div>
+          <div class="icon-plus"></div>
+      </div>
+
+      <p>
+          Add Student
+      </p>
+  </div>
+
+</div>
+
+<section class="listArea">
+
+<div class="listNav">
+
+  <p>
+    Student First Name
+  </p>
+
+  <p>
+    Student Last Name
+  </p>
+
+  <p>
+    Group
+  </p>
+
+</div>
+
+<div class="listResults" ng-click='modalOn = true'>
+
+  <p>
+    Scott
+  </p>
+
+  <p>
+    Harvey
+  </p>
+
+  <p>
+    DM 11
+  </p>
+
+</div>
+
+<div class="listResults" ng-click='modalOn = true'>
+
+  <p>
+    Chris
+  </p>
+
+  <p>
+    Myers
+  </p>
+
+  <p>
+    DM 11
+  </p>
+
+</div>
+
+<div class="listResults" ng-click='modalOn = true'>
+
+  <p>
+    Bob
+  </p>
+
+  <p>
+    Cook
+  </p>
+
+  <p>
+    DM 11
+  </p>
+
+</div>
+
+<div class="listResults" ng-click='modalOn = true'>
+
+  <p>
+    Scott
+  </p>
+
+  <p>
+    Gourley
+  </p>
+
+  <p>
+    DM 11
+  </p>
+
+</div>
+
+<div class="listResults" ng-click='modalOn = true'>
+
+  <p>
+    Bob
+  </p>
+
+  <p>
+    Cook
+  </p>
+
+  <p>
+    DM 11
+  </p>
+
+</div>
+
+
+</section>
+
+</section>
+
+</section> -->
+
+<!-- <div class="listNav">
+
+  <p>
+    Parent 1 First Name
+  </p>
+
+  <p>
+    Parent 1 Last Name
+  </p>
+
+  <p>
+    Parent 2 First Name
+  </p>
+
+  <p>
+    Parent 2 Last Name
+  </p>
+
+
+</div> -->
+<!-- <modal-curtain-dir></modal-curtain-dir>
+
+<section class="adminRight">
+
+  <section class="adminList">
+
+<section class="adminNavTitle">
+    <h3>
+      Students
+    </h3>
+
+    <div class="adminAdd"  ng-click="modalOn = true">
+
+        <div class="adminAddIcon">
+            <div class="icon-id-card"></div>
+            <div class="icon-plus"></div>
+        </div>
+
+        <p>
+            Add Student
+        </p>
+    </div>
+</section>
+    <div class="listNav">
+
+      <p>
+        Student Info
+      </p>
+
+      <p>
+        Parent 1 Info
+      </p>
+
+      <p>
+        Parent 2 Info
+      </p>
+
+      <p>
+        Alternate Contact Info
+      </p>
+
+      <p>
+        Groups
+      </p>
+
+    </div>
+
+  </section>
+
+  </section>
+
+</section> -->

@@ -1,0 +1,33 @@
+<section class="loginArea">
+
+    <h2 id="welcome">Welcome to TextConnect</h2>
+
+    <section class="loginLower">
+
+    <div class="loginCont">
+
+        <h3>Admin Login</h3>
+
+        <input type="text" name="email" placeholder="Email Address" ng-model="adminLoginReq.email">
+
+        <input type="password" name="password" placeholder="Password" ng-model="adminLoginReq.password">
+
+        <button type="button" name="login" ng-click = "adminLogin()">Login</button>
+
+    </div>
+
+    <div class="loginCont">
+
+        <h3>User Login</h3>
+
+        <input type="text" name="username" placeholder="Username" ng-model="userLoginReq.username">
+
+        <input type="password" name="password" placeholder="Password" ng-model="userLoginReq.password">
+
+        <button type="button" name="login" ng-click = "userLogin()">Login</button>
+
+    </div>
+
+  </section>
+
+</section>
