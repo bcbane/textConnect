@@ -25,7 +25,7 @@ const getNumberCtrl = require("./nodeControllers/getNumberCtrl")
 mongoose.connect('mongodb://localhost/textconnect');
 
 const corsOptions = {
-  origin: 'http://localhost:3000'
+  origin: 'http://localhost:80'
 }
 
 app.use(bodyParser.json());
@@ -57,7 +57,7 @@ app.post('/api/savem', saveText.create);
 // app.get('/api/history/:dst', saveText.show);
 
 
-const port = 3000
+const port = 80
 app.listen(port, function() {
   console.log('Ready to server my Lord ... port: ' + port)
 })
