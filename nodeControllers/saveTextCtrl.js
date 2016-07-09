@@ -1,4 +1,4 @@
-const textModel = require('../nodeModels/textModel.js')
+const textModel = require('../nodeModels/TextModel.js')
 const StudentModel = require('../nodeModels/StudentModel.js')
 
 module.exports = {
