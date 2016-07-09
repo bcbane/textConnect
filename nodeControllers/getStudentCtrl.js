@@ -1,4 +1,4 @@
-const StudentModel = require('../nodeModels/studentModel.js')
+const StudentModel = require('../nodeModels/StudentModel.js')
 
 module.exports = {
 

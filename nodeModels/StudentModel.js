@@ -1,4 +1,4 @@
 var mongoose = require('mongoose');
-var StudentSchema = require('../nodeSchemas/StudentSchema');
+var studentSchema = require('../nodeSchemas/studentSchema');
 
-module.exports = mongoose.model('Students', StudentSchema)
+module.exports = mongoose.model('Students', studentSchema)
