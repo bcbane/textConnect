@@ -1,14 +1,29 @@
 <section class="adminNumModal">
-<p>
-  Request New Phone Number
-</p>
 
-<button type="button" name="Create">Request Number from TextConnect</button>
+    <div class="modalAll">
 
-<input type="text" name="phone number" placeholder="Phone Number" ng-model = "number.number">
-<input type="text" name="description" placeholder="Add Description" ng-model = "number.desc">
+        <p class="modalTitle">
+            Manage Phone Numbers
+        </p>
 
-<button type="button" name="Create" ng-click = "addNumber(number)">Add Number</button>
+        <div class="modalSelectArea">
+            <div class="modalSel">
+                <p>
+                    First Name
+                </p>
+                <input type="text" name="phone number" placeholder="Phone Number" ng-model="number.number">
+            </div>
+            <div class="modalSel">
+                <p>
+                    First Name
+                </p>
+                <input type="text" name="description" placeholder="Add Description" ng-model="number.desc">
+            </div>
+        </div>
+        <button class = "modalBtn" type="button" name="Create" ng-click="addNumber(number)">Add Number</button>
 
+        <button class = "modalBtn" type="button" name="Create">Request Number from TextConnect</button>
+
+    </div>
 
 </section>

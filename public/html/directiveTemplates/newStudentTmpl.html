@@ -1,15 +1,52 @@
 <section class="adminStudentModal">
-<p>
-  Create New Student
-</p>
-<input type="text" name="Student Name" placeholder="Student Name" ng-model ="student.name">
-<input type="text" name="Contact Name" placeholder="Contact Name" ng-model ="contact.name">
-<input type="text" name="Phone" placeholder="Phone" ng-model ="contact.phone">
-<input type="text" name="Relationship" placeholder="Relationship to Student" ng-model ="contact.relationship">
 
+    <div class="modalAll">
 
-<select multiple ng-model = "groups.group" ng-options ="group.name for group in groups"></select>
+        <p class="modalTitle">
+            Create New Student
+        </p>
 
-<button type="button" name="Create" ng-click = "createStudent(student, contact)">Create</button>
+        <div class="modalSelectArea">
+
+            <div class="modalSel">
+                <p>
+                    Student Full Name
+                </p>
+                <input type="text" name="Student Name" placeholder="Student Full Name" ng-model="student.name">
+            </div>
+
+            <div class="modalSel">
+                <p>
+                    Contact Full Name
+                </p>
+                <input type="text" name="Contact Name" placeholder="Contact Name" ng-model="contact.name">
+            </div>
+
+            <div class="modalSel">
+                <p>
+                    Contact Phone Number
+                </p>
+                <input type="text" name="Phone" placeholder="Phone" ng-model="contact.phone">
+            </div>
+
+            <div class="modalSel">
+                <p>
+                    Relationship to Student
+                </p>
+                <input type="text" name="Relationship" placeholder="Relationship to Student" ng-model="contact.relationship">
+            </div>
+
+            <div class="modalSel">
+              <p>
+                  Assign Student to Group(s)
+              </p>
+                <select multiple ng-model="groups.group" ng-options="group.name for group in groups"></select>
+            </div>
+
+        </div>
+
+        <button class="modalBtn" type="button" name="Create" ng-click="createStudent(student, contact)">Create</button>
+
+    </div>
 
 </section>

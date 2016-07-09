@@ -1,11 +1,27 @@
 <section class="adminGroupModal">
-<p>
-  Create New Group
-</p>
-<input type="text" name="Group Name" placeholder="Group Name" ng-model = "group.name">
-<input type="text" name="Group Desc" placeholder="Group Desc" ng-model = "group.desc">
 
-<button type="button" name="Create" ng-click = "addGroups(group)">Create</button>
+    <div class="modalAll">
 
+        <p class="modalTitle">
+            Create New Group
+        </p>
+
+        <div class="modalSelectArea">
+          <div class="modalSel">
+          <p>
+              Group Name
+          </p>
+            <input type="text" name="Group Name" placeholder="Group Name" ng-model="group.name">
+          </div>
+          <div class="modalSel">
+            <p>
+              Group Description
+            </p>
+            <input type="text" name="Group Desc" placeholder="Group Description" ng-model="group.desc">
+          </div>
+        </div>
+        <button  class = "modalBtn"type="button" name="Create" ng-click="addGroups(group)">Create</button>
+
+    </div>
 
 </section>

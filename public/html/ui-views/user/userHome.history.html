@@ -20,7 +20,9 @@
                     Select Group
                 </p>
 
-                <select ng-model="groupSel" ng-click="fillGroups()" ng-options="group.name for group in groups"></select>
+                <select ng-model="groupSel" ng-click="fillGroups()" ng-options="group.name for group in groups">
+                  <option value="" disabled selected>Please choose</option>
+                </select>
 
             </div>
 
@@ -28,7 +30,9 @@
 
                 Select Student
 
-                <select ng-model="studentSel" ng-options="student.name for student in groupSel.students"></select>
+                <select ng-model="studentSel" ng-options="student.name for student in groupSel.students">
+                  <option value="" disabled selected>Please choose</option>
+                </select>
 
             </div>
 

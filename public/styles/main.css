@@ -48,6 +48,7 @@ nav ul li:hover {
 .icon-bars {
     display: none;
 }
+
 .menuSpacing {
     height: 10vh;
 }
@@ -527,6 +528,7 @@ nav ul li:hover {
   font-size: 50px;
   font-family: Lato;
   color: #2098d1;
+  text-align: center;
 }
 
 .adminTop{
@@ -583,6 +585,8 @@ nav ul li:hover {
 
   display: flex;
   justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 
@@ -592,7 +596,14 @@ nav ul li:hover {
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+
+  text-align: center;
+}
+
+.selector select{
+  width: auto;
 }
 
 .smsInput{
@@ -765,6 +776,11 @@ nav ul li:hover {
   width: calc(100% / 2)
 }
 
+.groupWrap{
+  height: 40px;
+  overflow: scroll;
+}
+
 .listRes{
 
   height: 72px;
@@ -787,28 +803,74 @@ nav ul li:hover {
 
 }
 
-/*.listResults{
-  width: 70vw;
-  padding: 5vh;
-  margin-top: 2vh;
-  border:solid #0be88c 2px;
-  border-radius: 8px;
-
+.modalAll{
   display: flex;
-  justify-content: space-between;
-}*/
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
 
-/*.results{
-  width: 33.33%;
-
-  text-align: center;
-}*/
-
-/*.listResults p{
+.modalTitle{
+  font-size: 40px;
+  font-family: Lato;
   color: #2098d1;
-  font-size: 20px;
-  font-family: Abel;
-}*/
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.modalSelectArea{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  overflow-y:scroll;
+  height: 34vh;
+}
+
+.modalSel{
+  padding: 20px;
+  text-align: center;
+}
+
+.modalSel p{
+  font-size: 14px;
+  font-family: Lato;
+  color: #2098d1;
+  text-align: center;
+  padding: 20px;
+
+}
+
+.modalSelectArea input{
+  width: 210px;
+  height: 40px;
+  font-size: 14px;
+  font-family: Lato;
+  color: #2098d1;
+  text-align: center;
+}
+
+.modalSelectArea select{
+  width: 220px;
+  height: 45px;
+  font-size: 14px;
+  font-family: Lato;
+  color: #2098d1;
+  text-align: center;
+
+}
+
+.modalBtn{
+  margin-top: 50px;
+  text-align: center;
+  background: #2098d1;
+  color: #fff;
+  font-size: 14px;
+  font-family: Lato;
+  width: 220px;
+  height: 45px;
+  border-radius: 8px;
+}
 
 
 footer{
@@ -905,6 +967,14 @@ footer ul li{
     font-size: 38px;
   }
 
+  .userRight h3{
+    font-size: 38px;
+  }
+/*
+  .selectionArea{
+    flex-direction: column;
+  }*/
+
 }
 
 @media (max-width: 700px) {
@@ -918,10 +988,22 @@ footer ul li{
     .icon-bars {
         color: white;
         font-size: 50px;
+        font-family: Oswald;
         display: block;
         margin-top: 10px;
         margin-right: 10px;
     }
+    .burgerMenu{
+      position: absolute;
+      top: 79px;
+      right: 4px;
+      padding: 10px;
+      background: rgb(12, 158, 255);
+      z-index: 1000;
+
+
+    }
+
     .introList {
         width: 80%;
         margin-left: 10%;

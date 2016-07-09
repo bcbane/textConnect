@@ -10,7 +10,15 @@
             <li>About</li>
         </ul>
 
-        <div class="icon-bars">
+        <div class="icon-bars" ng-click= "menuOnr()">
+
+          <ul class="burgerMenu" ng-if = "menuOn" >
+              <li ng-click = "menuSignup()">Signup</li>
+              <li ng-click = "menuLogin()">Login</li>
+              <li>Help</li>
+              <li>About</li>
+          </ul>
+
         </div>
     </nav>
 

@@ -22,7 +22,9 @@
                 Select Sending Number
               </p>
 
-              <select ng-model = "srcSel" ng-click = "fillNumbers()" ng-options = "number.desc for number in numbers"></select>
+              <select ng-model = "srcSel" ng-click = "fillNumbers()" ng-options = "number.desc for number in numbers">
+                <option value="" disabled selected>Please choose</option>
+              </select>
 
             </div>
 
@@ -33,7 +35,9 @@
                     Select Group
                   </p>
 
-                  <select ng-model = "groupSel" ng-click = "fillGroups()" ng-options = "group.name for group in groups"></select>
+                  <select ng-model = "groupSel" ng-click = "fillGroups()" ng-options = "group.name for group in groups">
+                    <option value="" disabled selected>Please choose</option>
+                  </select>
 
                 </div>
 
@@ -41,15 +45,19 @@
 
                   Select Student
 
-                  <select ng-model = "studentSel" ng-options = "student.name for student in groupSel.students"></select>
+                  <select ng-model = "studentSel" ng-options = "student.name for student in groupSel.students">
+                    <option value="" disabled selected>Please choose</option>
+                  </select>
 
                 </div>
 
                 <div class="selector">
 
-                  Select Contact
+                  Select Receiver Contact
 
-                  <select ng-model = "contactSel" ng-options = "contact.name for contact in studentSel.contact"></select>
+                  <select ng-model = "contactSel" ng-options = "contact.name for contact in studentSel.contact">
+                    <option value="" disabled selected>Please choose</option>
+                  </select>
 
                 </div>
 

@@ -1,15 +1,52 @@
 <section class="adminUserModal">
-<p>
-  Create New User
-</p>
-<input type="text" name="First Name" placeholder="First Name" ng-model = "newUser.fname">
-<input type="text" name="Last Name" placeholder="Last Name" ng-model = "newUser.lname">
-<input type="text" name="Phone Number" placeholder="Phone Number" ng-model = "newUser.phone">
-<input type="text" name="Username" placeholder="Username" ng-model = "newUser.username">
-<input type="password" name="Password" placeholder="Password" ng-model = "newUser.password">
 
-<select multiple ng-model = "groups.group" ng-options ="group.name for group in groups"></select>
+  <div class="modalAll">
 
-<button type="button" name="Create" ng-click = "addUser(newUser, groups.group)" >Create</button>
+    <p class="modalTitle">
+        Create New User
+    </p>
+
+    <div class="modalSelectArea">
+        <div class="modalSel">
+            <p>
+                First Name
+            </p>
+            <input type="text" name="First Name" placeholder="First Name" ng-model="newUser.fname">
+        </div>
+        <div class="modalSel">
+            <p>
+                Last Name
+            </p>
+            <input type="text" name="Last Name" placeholder="Last Name" ng-model="newUser.lname">
+        </div>
+        <div class="modalSel">
+            <p>
+                Phone
+            </p>
+            <input type="text" name="Phone Number" placeholder="Phone Number" ng-model="newUser.phone">
+        </div>
+        <div class="modalSel">
+            <p>
+                Username
+            </p>
+            <input type="text" name="Username" placeholder="Username" ng-model="newUser.username">
+        </div>
+        <div class="modalSel">
+            <p>
+                Password
+            </p>
+            <input type="password" name="Password" placeholder="Password" ng-model="newUser.password">
+        </div>
+        <div class="modalSel">
+            <p>
+                Group(s) Assigned
+            </p>
+            <select multiple ng-model="groups.group" ng-options="group.name for group in groups"></select>
+        </div>
+    </div>
+
+    <button class = "modalBtn" type="button" name="Create" ng-click="addUser(newUser, groups.group)">Create</button>
+
+    </div>
 
 </section>
