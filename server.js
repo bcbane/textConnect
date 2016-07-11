@@ -25,7 +25,7 @@ const getNumberCtrl = require("./nodeControllers/getNumberCtrl")
 mongoose.connect('mongodb://localhost/textconnect');
 
 const corsOptions = {
-  origin: 'http://localhost:3000'
+  origin: 'http://127.0.0.1:3000/'
 }
 
 app.use(bodyParser.json());
