@@ -15,12 +15,15 @@ $scope.sendM = function () {
 
   userSendMessageService.sendM($scope.params).then(function (response) {
 
-    console.log(response);
+
+
+
 
   })
 
   userSendMessageService.saveM($scope.params, $scope.studentID).then(function (response) {
 
+    $scope.sentMsg = "Message Sent";
     console.log(response);
 
   })

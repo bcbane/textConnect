@@ -570,6 +570,13 @@ nav ul li:hover {
 
 }
 
+.userTitleCont p{
+  color: red;
+  font-family: Lato;
+  font-size: 18px;
+  text-align: center;
+}
+
 .sendingCont{
   width: 450px;
   height: auto;

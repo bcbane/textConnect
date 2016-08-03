@@ -5,7 +5,7 @@ this.getHistory = function (number) {
 
   return $http({
     method : 'GET',
-    url: 'http://localhost:3000/api/history/' + number
+    url: '/api/history/' + number
   })
 
 }

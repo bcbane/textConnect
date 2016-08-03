@@ -7,7 +7,7 @@ angular.module('app').service('adminNumberService', function($http){
 
     return $http({
       method: 'GET',
-      url: 'http://localhost:3000/api/numbers'
+      url: '/api/numbers'
     })
   }
 
@@ -17,7 +17,7 @@ angular.module('app').service('adminNumberService', function($http){
 
     return $http({
       method : 'POST',
-      url: 'http://localhost:3000/api/numbers',
+      url: '/api/numbers',
       data: number
     }).then(function (response) {
 

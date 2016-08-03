@@ -8,7 +8,7 @@ angular.module('app').service('adminUserService', function($http){
 
     return $http({
       method: 'GET',
-      url: 'http://localhost:3000/api/groups'
+      url: '/api/groups'
     })
   }
 
@@ -25,7 +25,7 @@ angular.module('app').service('adminUserService', function($http){
 
     return $http({
       method : 'POST',
-      url: 'http://localhost:3000/api/users',
+      url: '/api/users',
       data: {
         newUser: newUser,
         groups :  groups

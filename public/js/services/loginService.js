@@ -5,7 +5,7 @@ this.signInAdmin = function (adminLoginReq) {
 
   return $http({
     method : 'GET',
-    url: 'http://localhost:3000/api/admins/' + adminLoginReq.email + '/' + adminLoginReq.password
+    url: '/api/admins/' + adminLoginReq.email + '/' + adminLoginReq.password
   })
 
 }
@@ -16,7 +16,7 @@ this.signInUser = function (userLoginReq) {
 
   return $http({
     method : 'GET',
-    url: 'http://localhost:3000/api/users/' + userLoginReq.username + '/' + userLoginReq.password
+    url: '/api/users/' + userLoginReq.username + '/' + userLoginReq.password
   })
 
 }

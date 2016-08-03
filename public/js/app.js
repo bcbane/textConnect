@@ -3,7 +3,9 @@ angular.module('app', ['ui.router']).config(function($stateProvider, $urlRouterP
     $urlRouterProvider.otherwise('/');
 
 
-    $stateProvider.state('home', {
+    $stateProvider
+    
+        .state('home', {
 
             url: '/',
             templateUrl: "html/ui-views/home.html",

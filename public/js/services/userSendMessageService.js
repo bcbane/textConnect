@@ -4,7 +4,7 @@ angular.module('app').service('userSendMessageService', function($http){
     console.log(params);
     return $http({
       method : 'POST',
-      url: 'http://localhost:3000/sendm',
+      url: '/sendm',
       data: params
     })
   }
@@ -13,7 +13,7 @@ angular.module('app').service('userSendMessageService', function($http){
 
     return $http({
       method : 'POST',
-      url: 'http://localhost:3000/api/savem',
+      url: '/api/savem',
       data: {
         params: params,
         id :  id
@@ -26,7 +26,7 @@ angular.module('app').service('userSendMessageService', function($http){
 
     return $http({
       method: 'GET',
-      url: 'http://localhost:3000/api/numbers'
+      url: '/api/numbers'
     })
 
   }
